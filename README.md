@@ -18,7 +18,7 @@ Realtime Crop Prediction using pandas and dataset for the particular area
 
 Do check all the libraries are installed properly if you are using offline software for python (like IDLE, Pycharm etc.,)
 
-# How to run the code or the procedure to get the output results
+# HOW TO RUN THE CODE OR THE PROCEDURE TO GET THE OUTPUT
 
       1) Check the path of the dataset(.csv) is given properly in the code and also check the path were to create the new excel sheet for the output
       2) Run the code 
