@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup 
 import requests
 from pandas import ExcelWriter
-import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
+import pandas as pd 
 import urllib.request
 import time
 def connect(host='http://google.com'):
