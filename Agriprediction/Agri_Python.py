@@ -34,25 +34,25 @@ def predict(a,b,climate):
           else:
                newString += val.capitalize()+ ' '
      d=newString
-     raindata = pd.read_csv("F:/Agriprediction/Tamilnadu agriculture yield data.csv")
+     raindata = pd.read_csv("Agriprediction/Tamilnadu agriculture yield data.csv")
      if d in set(raindata['State_Name']) and c in set(raindata['District_Name']):
           #print(set(raindata['District_Name']))
           r = raindata[raindata['District_Name'].str.contains(c, na=False)]
-          writer = ExcelWriter('F:/Agriprediction/PythonExport.xlsx')
+          writer = ExcelWriter('Agriprediction/PythonExport.xlsx')
           r.to_excel(writer,'Sheet1',index=False)
           writer.save()
-          dat = pd.read_excel("F:/Agriprediction/PythonExport.xlsx")
+          dat = pd.read_excel("Agriprediction/PythonExport.xlsx")
           con='Whole Year'
           s = dat[dat['Season'].str.contains(con, na=False)]
          # writer = ExcelWriter('F:/Agriprediction/PythonExport.xlsx')
-          dat1 = pd.read_excel("F:/Agriprediction/PythonExport.xlsx")
+          dat1 = pd.read_excel("Agriprediction/PythonExport.xlsx")
           con1=climate
           s1 = dat1[dat1['Season'].str.contains(con1, na=False)]
           bsten=s.nlargest(5,['Production Quantity in Kilogram'])
           bsten1=s1.nlargest(5,['Production Quantity in Kilogram'])
           ge=bsten.drop_duplicates(subset=['Season', 'Crop'], keep="first")
           ge1=bsten1.drop_duplicates(subset=['Season', 'Crop'], keep="first")
-          writer2 = ExcelWriter('F:/Agriprediction/PythonExport.xlsx')
+          writer2 = ExcelWriter('Agriprediction/PythonExport.xlsx')
           ge.to_excel(writer2,sheet_name = 'Whole Year',index=False)
           ge1.to_excel(writer2,sheet_name = climate,index=False)
           writer2.save()
