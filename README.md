@@ -3,8 +3,8 @@ Realtime Crop Prediction using pandas and dataset for the particular area
 
 !!!  IMPORTANT NOTES  !!!
 
-    * Do check the same given dataset available in your directory.
-    * Check your internet connectivity before running your code since the program is coded to get your live climate condition.
+    1) Do check the same given dataset available in your directory.
+    2) Check your internet connectivity before running your code since the program is coded to get your live climate condition.
 
 !!!  REQUIRED PYTHON PACKAGES   !!!
 
