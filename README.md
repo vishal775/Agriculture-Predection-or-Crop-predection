@@ -17,3 +17,13 @@ Realtime Crop Prediction using pandas and dataset for the particular area
     
 
 Do check all the libraries are installed properly if you are using offline software for python (like IDLE, Pycharm etc.,)
+
+# How to run the code or the procedure to get the output results
+
+      1) Check the path of the dataset(.csv) is given properly in the code and also check the path were to create the new excel sheet for the output
+      2) Run the code 
+      3) It check for the internet connectivity if it is present it displays internet connected
+      4) Next is gets the State and the District of your choise 
+      5) Gives the result in PythonExport.xlsx in two sheets 
+      6) If the internet is not connected it waits for the internet connection if connected continues from the step 3
+
